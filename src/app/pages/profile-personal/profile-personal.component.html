@@ -1,0 +1,2020 @@
+<section class="container-fluid">
+  <div class="banner">
+    <div class="profile">
+      <img
+        src="https://pixlr.com/studio/template/6264364c-b8cc-4f4f-92d8-28c69a2b756w/thumbnail.webp"
+        alt="profile"
+      />
+    </div>
+  </div>
+</section>
+<section class="container-fluid">
+  <div class="tab-area">
+    <mat-tab-group animationDuration="0s" mat-align-tabs="center">
+      <mat-tab label="Personal">
+        <div class="checkbox-area">
+          <mat-checkbox class="custom-frame">Private</mat-checkbox>
+          <mat-checkbox class="custom-frame">Public</mat-checkbox>
+          <mat-checkbox class="checkbox">Not Searchable</mat-checkbox>
+        </div>
+        <div class="content">
+          <div class="log-in-form">
+            <div class="border-box">
+              <div class="dashboard">
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Full Name</mat-label>
+                    <input
+                      matInput
+                      placeholder="Full Name"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Nick Name</mat-label>
+                    <input
+                      matInput
+                      placeholder="Nick Name"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Sur Name</mat-label>
+                    <input
+                      matInput
+                      placeholder="Sur Name"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Gender</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Male</mat-option>
+                      <mat-option value="two">Female</mat-option>
+                      <mat-option value="two">Others</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field color="accent" appearance="outline">
+                    <mat-label>Birthday (date and time)</mat-label>
+                    <input matInput [matDatepicker]="picker1" />
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle
+                      matIconSuffix
+                      [for]="picker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Nationality</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Bangladeshi</mat-option>
+                      <mat-option value="two">Others</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Religion</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Islam</mat-option>
+                      <mat-option value="two">Hindus</mat-option>
+                      <mat-option value="two">Others</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Blood Group</mat-label>
+                    <mat-select>
+                      <mat-option value="one">A+</mat-option>
+                      <mat-option value="two">B+</mat-option>
+                      <mat-option value="two">AB+</mat-option>
+                      <mat-option value="two">O+</mat-option>
+                      <mat-option value="two">O-</mat-option>
+                      <mat-option value="one">A-</mat-option>
+                      <mat-option value="two">B-</mat-option>
+                      <mat-option value="two">AB-</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field color="accent" appearance="outline">
+                    <mat-label>Last Donation(date and time)</mat-label>
+                    <input matInput [matDatepicker]="picker1" />
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle
+                      matIconSuffix
+                      [for]="picker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Mobile Number</mat-label>
+                    <input
+                      matInput
+                      placeholder="Mobile Number"
+                      [formControl]="phone"
+                      required
+                    />
+                    <mat-error *ngIf="phone.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <p class="checkbox2">
+                  <mat-checkbox formControlName="pepperoni"
+                    >Interest to Donate my Organ to My Family
+                    Member</mat-checkbox
+                  >
+                </p>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Job Status</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Employee</mat-option>
+                      <mat-option value="two">UnEmployee</mat-option>
+                      <mat-option value="two">Others</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Marrital Status</mat-label>
+                    <mat-select>
+                      <mat-option value="one"
+                        >Single (Never Married)</mat-option
+                      >
+                      <mat-option value="two">Married</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Language</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Bangla</mat-option>
+                      <mat-option value="two">English</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="small">
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Membership Country</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Bangladesh</mat-option>
+                        <mat-option value="two">India</mat-option>
+                        <mat-option value="two">America</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Social</mat-label>
+                      <mat-select>
+                        <mat-option value="one">online</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Designation</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>General Member</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <button class="btn-one">ADD</button>
+                </div>
+                <h2>Inputed Data View Below</h2>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Educational Level</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Graduate</mat-option>
+                      <mat-option value="two">Under Graduated</mat-option>
+                      <mat-option value="two">Post Graduated</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Highest Educational Qualification</mat-label>
+                    <input
+                      matInput
+                      placeholder="Educational Qualification"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Experience Countries</mat-label>
+                    <input
+                      matInput
+                      placeholder="Experience Countries"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Occupation</mat-label>
+                    <input
+                      matInput
+                      placeholder="Occupation"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Occupational Mobile with</mat-label>
+                    <input
+                      matInput
+                      placeholder="Occupational Mobile with"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Occupational Email-ID</mat-label>
+                    <input
+                      matInput
+                      placeholder="Occupational Email-ID"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Occupational Keywords</mat-label>
+                    <input
+                      matInput
+                      placeholder="Occupational keywords"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Occupational Web Link</mat-label>
+                    <input
+                      matInput
+                      placeholder="Occupational Web Link"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <h3>
+                  Click on the "Choose File" button to upload & Preview VIsiting
+                  Card Front Page
+                </h3>
+                <div class="file-upload">
+                  <input type="file" multiple />
+                </div>
+                <h3>
+                  Click on the "Choose File" button to upload & Preview VIsiting
+                  Card Back Page
+                </h3>
+                <div class="file-upload">
+                  <input type="file" multiple />
+                </div>
+                <div class="address-tabs">
+                  <h2>Address (Four TABs)</h2>
+                  <mat-button-toggle value="bold">Present</mat-button-toggle>
+                  <mat-button-toggle value="italic"
+                    >Permanent</mat-button-toggle
+                  >
+                  <mat-button-toggle value="underline"
+                    >Occupation</mat-button-toggle
+                  >
+                  <mat-button-toggle value="Vote">Voting</mat-button-toggle>
+                </div>
+
+                <p>Address:</p>
+                <div class="small">
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Continent</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Country</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Bangladesh</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Division</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>District</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Union</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Sub-District</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <!-- ...end  -->
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Post Office</mat-label>
+                    <input
+                      matInput
+                      placeholder="Post Office"
+                      [formControl]="address"
+                      required
+                    />
+                    <mat-error *ngIf="address.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Zip Code</mat-label>
+                    <input
+                      matInput
+                      placeholder="Zip Code"
+                      [formControl]="address"
+                      required
+                    />
+                    <mat-error *ngIf="address.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Area</mat-label>
+                    <input
+                      matInput
+                      placeholder="Area"
+                      [formControl]="address"
+                      required
+                    />
+                    <mat-error *ngIf="address.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Home Name</mat-label>
+                    <input
+                      matInput
+                      placeholder="Home Name"
+                      [formControl]="address"
+                      required
+                    />
+                    <mat-error *ngIf="address.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>House Name</mat-label>
+                    <input
+                      matInput
+                      placeholder="House Name"
+                      [formControl]="address"
+                      required
+                    />
+                    <mat-error *ngIf="address.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>MP/Electoral Seat Number</mat-label>
+                    <input
+                      matInput
+                      placeholder="MP/Electoral Seat Number"
+                      [formControl]="phone"
+                      required
+                    />
+                    <mat-error *ngIf="phone.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <h4>
+                  GPS Tracking Data also auto recorded into Database with Member
+                  Permission Option.
+                </h4>
+                <div class="list">
+                  <h3>Interested to Earn By:</h3>
+                  <ul>
+                    <li>Agency Commission</li>
+                    <li>Ads View</li>
+                    <li>Provide Service</li>
+                    <li>Own Crypto Currency</li>
+                    <li>Telemedicine</li>
+                    <li>Subscription</li>
+                    <li>Package</li>
+                    <li>Lifestyle Package</li>
+                  </ul>
+                </div>
+                <div class="follow">
+                  <mat-button-toggle value="bold">Facebook</mat-button-toggle>
+                  <mat-button-toggle value="italic">Twitter</mat-button-toggle>
+                  <mat-button-toggle value="underline"
+                    >Instagram</mat-button-toggle
+                  >
+                  <mat-button-toggle value="Vote">Pinterest</mat-button-toggle>
+                  <mat-button-toggle value="Vote">Youtube</mat-button-toggle>
+                  <mat-button-toggle value="Vote">Reddit</mat-button-toggle>
+                  <mat-button-toggle value="Vote">Telegram</mat-button-toggle>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Occasion Name</mat-label>
+                    <input
+                      matInput
+                      placeholder="Occasion Name"
+                      [formControl]="name"
+                      required
+                    />
+                    <mat-error *ngIf="email.invalid">{{
+                      getErrorMessage()
+                    }}</mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field color="accent" appearance="outline">
+                    <mat-label>Occasion(date and time)</mat-label>
+                    <input matInput [matDatepicker]="picker1" />
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle
+                      matIconSuffix
+                      [for]="picker1"
+                    ></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+                  <p>Preview Occasion Data <button>Delete</button></p>
+                </div>
+                <h3>To-Do-List:</h3>
+                <div class="small">
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Subject/Works</mat-label>
+                      <input
+                        matInput
+                        placeholder="Subject/Works"
+                        [formControl]="name"
+                        required
+                      />
+                      <mat-error *ngIf="email.invalid">{{
+                        getErrorMessage()
+                      }}</mat-error>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field color="accent" appearance="outline">
+                      <mat-label>MM/DD/YYYY</mat-label>
+                      <input matInput [matDatepicker]="picker1" />
+                      <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="picker1"
+                      ></mat-datepicker-toggle>
+                      <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field color="accent" appearance="outline">
+                      <mat-label>MM/DD/YYYY</mat-label>
+                      <input matInput [matDatepicker]="picker1" />
+                      <mat-datepicker-toggle
+                        matIconSuffix
+                        [for]="picker1"
+                      ></mat-datepicker-toggle>
+                      <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                  </div>
+                  <div class="input-field">
+                    <mat-form-field appearance="outline">
+                      <mat-label>SMS Notification</mat-label>
+                      <mat-select>
+                        <mat-option value="one">Asia</mat-option>
+                        <mat-option value="two">Eorope</mat-option>
+                        <mat-option value="two">Africa</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <button>ADD</button>
+                </div>
+                <p>Preview Occasion Data <button>Delete</button></p>
+                <h3>Interest</h3>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Electronics</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> TV</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Audio</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Security</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Appliances</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Computer
+                        Hardware</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Entertainment</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Movies &
+                        TV</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Theatre &
+                        Shows</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Concert &
+                        Events</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Restaurants</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Malls &
+                        Casinos</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Experiences</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Family & Relationships</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Dating</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Children</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Parenthood</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Pets</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Fashion & Beauty</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Clothes</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Shoes</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Make-Up</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Fashion & Beauty
+                        Accessories</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Beauty
+                        Products</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Finance & Insurance</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Banking
+                        Products</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Stock Market
+                        Products</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Invesment
+                        Products</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Insurance
+                        Products</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Food & Non Alcoholic Drinks</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Food</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Hot
+                        Beverages</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Soft
+                        Drinks</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Water</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Garden & Home</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i>
+                        Furniture</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Toys</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Garden</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Health & Wellbeing</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Exercise
+                        Equipment</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Exercise
+                        Classes</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Supplements</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Nutrition</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Mind Fullness &
+                        Meditation</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Working
+                        Out</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Hobbies & Activities</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Arts &
+                        Crafts</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Cooking</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Dancing</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Gardening</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Music & Musical
+                        Instruments</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Sports</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Travels</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Hobbies &
+                        Activities</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Luxuries Goods</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i>
+                        Jewellery</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Perfumes</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Watches</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> High-end
+                        Accessories</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Luxury
+                        Cars</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Art &
+                        Design</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Medical</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i>
+                        Medicines</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Doctors & Doctors
+                        Room</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Hospitals</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Medical
+                        Practitioners</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Medical
+                        equipments</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Chiropractic &
+                        Spiritual</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Mobile Devices</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Mobile
+                        Phones</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Mobile Devices
+                        Accessories</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Motor Vehicles</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Cars</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Trailers</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Busses &
+                        Trucks</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Motor Bike &
+                        Scooter</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Real Estate</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Houses</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Apartments</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Invesment
+                        Property</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Services</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Legal</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Accounting</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Maintenance</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i>
+                        Telecoms</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Sports and Outdoors</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Sports, e.g Soccer,
+                        running</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Outdoor Activities
+                        e.g. Camping</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="input-field">
+                  <mat-form-field appearance="outline">
+                    <mat-label>Technology & Gaming</mat-label>
+                    <mat-select>
+                      <mat-option value="one">
+                        <i class="fa-regular fa-square"></i> Smart Devices &
+                        Wearables</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Consoles &
+                        Gaming</mat-option
+                      >
+                      <mat-option value="two"
+                        ><i class="fa-regular fa-square"></i> Laptops &
+                        Computers</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="two-button">
+                <p>Interest Category</p>
+                <span><button>ADD</button></span>
+              </div>
+              <div class="two-button">
+                <p>Sub-category</p>
+                <span><button>ADD</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <!-- TAB ONE END -->
+
+      <mat-tab label="Material">
+        <div class="parents">
+          <section class="child">
+            <h4 class="title-text">I am</h4>
+            <div>
+              <p>Full Name</p>
+              <p (click)="genderToggle()">Gender ▼</p>
+              <div *ngIf="isShowToggle" class="toggleElm">
+                <ul>
+                  <li>Man</li>
+                  <li>Women</li>
+                </ul>
+              </div>
+              <span>Father's Name</span> <br />
+              <span>Mother's Name</span> <br />
+              <span>Paternal Grand Father's Name </span> <br />
+              <span>Maternal Grand Father's Name </span> <br />
+
+              <span (click)="maritalToggle()">Marital Status ▼ </span>
+              <!-- [ngClass]="{active:toggleElement, inActive:!toggleElement}" -->
+              <div class="toggleElm">
+                <ul *ngIf="isShowMarital">
+                  <li>Single(Never Married)</li>
+                  <li>Married</li>
+                  <li>Married but seperated</li>
+                  <li>Widowed and not remarried</li>
+                  <li>Divorced and not remarried</li>
+                </ul>
+              </div>
+
+              <p>(If Applicable)Children Q'ty</p>
+              <p (click)="bloodToggle()">Blood Group ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowBlood">
+                  <li>O+</li>
+                  <li>O-</li>
+                  <li>A+</li>
+                  <li>A-</li>
+                  <li>B+</li>
+                  <li>B-</li>
+                  <li>AB+</li>
+                  <li>AB-</li>
+                </ul>
+              </div>
+              <p (click)="tongueToggle()">Mother Tongue ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowTongue">
+                  <li>Bengali</li>
+                  <li>Bhojpuri</li>
+                  <li>Egyptian Spoken Arabic</li>
+                  <li>Saudi Arabic</li>
+                  <li>English</li>
+                  <li>Iranian Persian</li>
+                  <li>Portuguese</li>
+                  <li>Marathi</li>
+                  <li>Standard Chinese</li>
+                  <li>Mandarin Chinese</li>
+                  <li>Korean</li>
+                  <li>Javanese</li>
+                  <li>Japanese</li>
+                  <li>Italian</li>
+                  <li>Tajik</li>
+                  <li>Dari</li>
+                  <li>Hindi</li>
+                  <li>Hausa</li>
+                  <li>Gujarati</li>
+                  <li>French</li>
+                  <li>Russian</li>
+                  <li>Spanish</li>
+                  <li>Standard German</li>
+                  <li>Tamil</li>
+                  <li>Telugu</li>
+                  <li>Turkish</li>
+                  <li>Urdu</li>
+                  <li>Vietnamese</li>
+                  <li>Western Punjabi</li>
+                  <li>Eastern Punjabi</li>
+                  <li>Wu Chinese</li>
+                  <li>Shanghainese</li>
+                  <li>Yue Chinese</li>
+                  <li>Cantonese</li>
+                </ul>
+              </div>
+              <p (click)="relegionToggle()">Relegion ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowRelegion">
+                  <li>Christianity</li>
+                  <li>Islam</li>
+                  <li>Hinduism</li>
+                  <li>Buddhism</li>
+                  <li>Folk Religions</li>
+                  <li>Unaffiliated</li>
+                  <li>Other Religions</li>
+                </ul>
+              </div>
+              <p>Community</p>
+              <p>Age: 00 Years</p>
+              <p>Nationality</p>
+              <p (click)="dietToggle()">Diet ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowDiet">
+                  <li>Veg</li>
+                  <li>Non-Veg</li>
+                  <li>Eggetarian</li>
+                  <li>Vegan</li>
+                </ul>
+              </div>
+              <p>Height(CM)</p>
+              <p>Average Weight(KG)</p>
+              <p (click)="educationToggle()">Educational Level ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowEducation">
+                  <li>Post Graduate</li>
+                  <li>Graduate</li>
+                  <li>Under Graduate</li>
+                </ul>
+              </div>
+              <p (click)="jobToggle()">Job Status ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowJob">
+                  <li>Self Employed</li>
+                  <li>Employed</li>
+                  <li>Unemployed</li>
+                </ul>
+              </div>
+              <p (click)="behaviorToggle()">Behavior ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowBehavior">
+                  <li>Aggressive</li>
+                  <li>Mutualistic</li>
+                  <li>Cooperative</li>
+                  <li>Altruistic</li>
+                  <li>Parental</li>
+                </ul>
+              </div>
+              <p>Hobby</p>
+              <p>Interest</p>
+              <p>Thalassemia</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" value="YES" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" value="NO" />
+                </p>
+                <p>CAREER <input type="radio" name="" id="" /></p>
+              </div>
+              <p>Sickle Cell Anemia</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Hepatits B/C</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>HIV/AIDS</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Diabetes</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Living with Family</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Living with Family Type</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Family Bonding Awareness</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Caring Senior Citizen</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Alive Parent Living with You</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Talking with Parents</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+
+              <p>Skin Color</p>
+              <p>Yearly Income($)</p>
+              <p>Self SWOT evaluate for Happy Family Life</p>
+              <!-- disable -->
+              <p class="info-disable">Personal Strength</p>
+              <p class="info-disable">Personal Weakness</p>
+              <p class="info-disable">Personal Opportunity</p>
+              <p class="info-disable">Personal Threat</p>
+
+              <p>Our Relation Dependence on</p>
+
+              <!-- disable  -->
+              <p class="info-disable">
+                1) Trust, Love, Respect, Responsibility
+              </p>
+              <p class="info-disable">
+                2) Care Family, Community & Religious Ethics
+              </p>
+              <p class="info-disable">
+                3) Prior Written Permission another Marriage
+              </p>
+
+              <p>Relational Problem Solver judge</p>
+              <!-- disable  -->
+              <p class="info-disable">1) Mr. X and Miss. Y as Councilors</p>
+              <p class="info-disable">
+                That Mr.X Mobile and Miss. Y Mobile Number
+              </p>
+              <p class="info-disable">
+                2) Mr. X and Miss. Y as Religious Leaders
+              </p>
+              <p class="info-disable">
+                That Mr.X Mobile and Miss. Y Mobile Number
+              </p>
+              <p class="info-disable">
+                3) Mr. X and Miss. Y as Community Leaders
+              </p>
+              <p class="info-disable">
+                That Mr.X Mobile and Miss. Y Mobile Number
+              </p>
+              <!-- disable end  -->
+              <p>Profile Link/ Blog URL</p>
+              <p>Marital Profile Sahring Link</p>
+              <p (click)="addressToggle()">Address ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowAddress">
+                  <li>Country (From DB)</li>
+                  <li>Division (From DB)</li>
+                  <li>District/City (From DB)</li>
+                  <li>Sub-District/Municipalities/Ward (From DB)</li>
+                  <li>Union/Ward (From DB)</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- section end  -->
+
+          <section class="child">
+            <h4 class="title-text">Looking for</h4>
+            <div>
+              <!-- <p>Full Name</p> -->
+              <p (click)="genderToggle()">Gender ▼</p>
+              <div *ngIf="isShowToggle" class="toggleElm">
+                <ul>
+                  <li>Man</li>
+                  <li>Women</li>
+                </ul>
+              </div>
+              <span>Father's Name</span> <br />
+              <span>Mother's Name</span> <br />
+              <span>Paternal Grand Father's Name </span> <br />
+              <span>Maternal Grand Father's Name </span> <br />
+
+              <span (click)="maritalToggle()">Marital Status ▼ </span>
+              <!-- [ngClass]="{active:toggleElement, inActive:!toggleElement}" -->
+              <div class="toggleElm">
+                <ul *ngIf="isShowMarital">
+                  <li>Single(Never Married)</li>
+                  <li>Married</li>
+                  <li>Married but seperated</li>
+                  <li>Widowed and not remarried</li>
+                  <li>Divorced and not remarried</li>
+                </ul>
+              </div>
+
+              <p>(If Applicable)Children Q'ty</p>
+              <p (click)="bloodToggle()">Blood Group ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowBlood">
+                  <li>O+</li>
+                  <li>O-</li>
+                  <li>A+</li>
+                  <li>A-</li>
+                  <li>B+</li>
+                  <li>B-</li>
+                  <li>AB+</li>
+                  <li>AB-</li>
+                </ul>
+              </div>
+              <p (click)="tongueToggle()">Mother Tongue ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowTongue">
+                  <li>Bengali</li>
+                  <li>Bhojpuri</li>
+                  <li>Egyptian Spoken Arabic</li>
+                  <li>Saudi Arabic</li>
+                  <li>English</li>
+                  <li>Iranian Persian</li>
+                  <li>Portuguese</li>
+                  <li>Marathi</li>
+                  <li>Standard Chinese</li>
+                  <li>Mandarin Chinese</li>
+                  <li>Korean</li>
+                  <li>Javanese</li>
+                  <li>Japanese</li>
+                  <li>Italian</li>
+                  <li>Tajik</li>
+                  <li>Dari</li>
+                  <li>Hindi</li>
+                  <li>Hausa</li>
+                  <li>Gujarati</li>
+                  <li>French</li>
+                  <li>Russian</li>
+                  <li>Spanish</li>
+                  <li>Standard German</li>
+                  <li>Tamil</li>
+                  <li>Telugu</li>
+                  <li>Turkish</li>
+                  <li>Urdu</li>
+                  <li>Vietnamese</li>
+                  <li>Western Punjabi</li>
+                  <li>Eastern Punjabi</li>
+                  <li>Wu Chinese</li>
+                  <li>Shanghainese</li>
+                  <li>Yue Chinese</li>
+                  <li>Cantonese</li>
+                </ul>
+              </div>
+              <p (click)="relegionToggle()">Relegion ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowRelegion">
+                  <li>Christianity</li>
+                  <li>Islam</li>
+                  <li>Hinduism</li>
+                  <li>Buddhism</li>
+                  <li>Folk Religions</li>
+                  <li>Unaffiliated</li>
+                  <li>Other Religions</li>
+                </ul>
+              </div>
+              <p>Community</p>
+              <p>Age: 00 Years</p>
+              <p>Nationality</p>
+              <p (click)="dietToggle()">Diet ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowDiet">
+                  <li>Veg</li>
+                  <li>Non-Veg</li>
+                  <li>Eggetarian</li>
+                  <li>Vegan</li>
+                </ul>
+              </div>
+              <p>Height(CM)</p>
+              <p>Average Weight(KG)</p>
+              <p (click)="educationToggle()">Educational Level ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowEducation">
+                  <li>Post Graduate</li>
+                  <li>Graduate</li>
+                  <li>Under Graduate</li>
+                </ul>
+              </div>
+              <p (click)="jobToggle()">Job Status ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowJob">
+                  <li>Self Employed</li>
+                  <li>Employed</li>
+                  <li>Unemployed</li>
+                </ul>
+              </div>
+              <p (click)="behaviorToggle()">Behavior ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowBehavior">
+                  <li>Aggressive</li>
+                  <li>Mutualistic</li>
+                  <li>Cooperative</li>
+                  <li>Altruistic</li>
+                  <li>Parental</li>
+                </ul>
+              </div>
+              <p>Hobby</p>
+              <p>Interest</p>
+              <p>Thalassemia</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" value="YES" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" value="NO" />
+                </p>
+                <p>CAREER <input type="radio" name="" id="" /></p>
+              </div>
+              <p>Sickle Cell Anemia</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Hepatits B/C</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>HIV/AIDS</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Diabetes</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Living with Family</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Living with Family Type</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Family Bonding Awareness</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Caring Senior Citizen</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Alive Parent Living with You</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+              <p>Talking with Parents</p>
+              <div class="redio-input">
+                <p>YES <input type="radio" name="" id="" /></p>
+                <p class="input-child">
+                  NO <input type="radio" name="" id="" />
+                </p>
+              </div>
+
+              <p>Skin Color</p>
+              <p>Yearly Income($)</p>
+              <p>Self SWOT evaluate for Happy Family Life</p>
+              <!-- disable -->
+              <p class="info-disable">Personal Strength</p>
+              <p class="info-disable">Personal Weakness</p>
+              <p class="info-disable">Personal Opportunity</p>
+              <p class="info-disable">Personal Threat</p>
+
+              <p>Our Relation Dependence on</p>
+
+              <!-- disable  -->
+              <p class="info-disable">
+                1) Trust, Love, Respect, Responsibility
+              </p>
+              <p class="info-disable">
+                2) Care Family, Community & Religious Ethics
+              </p>
+              <p class="info-disable">
+                3) Prior Written Permission another Marriage
+              </p>
+
+              <p>Relational Problem Solver judge</p>
+              <!-- disable  -->
+              <p class="info-disable">1) Mr. X and Miss. Y as Councilors</p>
+              <p class="info-disable">
+                That Mr.X Mobile and Miss. Y Mobile Number
+              </p>
+              <p class="info-disable">
+                2) Mr. X and Miss. Y as Religious Leaders
+              </p>
+              <p class="info-disable">
+                That Mr.X Mobile and Miss. Y Mobile Number
+              </p>
+              <p class="info-disable">
+                3) Mr. X and Miss. Y as Community Leaders
+              </p>
+              <p class="info-disable">
+                That Mr.X Mobile and Miss. Y Mobile Number
+              </p>
+              <!-- disable end  -->
+              <p>Profile Link/ Blog URL</p>
+              <p>Marital Profile Sahring Link</p>
+              <p (click)="addressToggle()">Address ▼</p>
+              <div class="toggleElm">
+                <ul *ngIf="isShowAddress">
+                  <li>Country (From DB)</li>
+                  <li>Division (From DB)</li>
+                  <li>District/City (From DB)</li>
+                  <li>Sub-District/Municipalities/Ward (From DB)</li>
+                  <li>Union/Ward (From DB)</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </mat-tab>
+      <!-- <--TAB 2 END -->
+      -->
+      <mat-tab label="Professional">
+        <section class="profile-profetional">
+          <div class="container">
+            <div class="items">
+              <div class="institutionaledu">
+                <!--Institutional Education Start-->
+                <span>Institutional Education</span>
+                <div class="inputbtn">
+                  <div class="inputs">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Educational Level</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Passing Year</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Institute</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Board/University</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Field Specification</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                  </div>
+                  <div class="btn">
+                    <button mat-flat-button color="primary">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <!--Institutional Education End-->
+
+              <div class="training">
+                <!--  Training Start-->
+                <span>Training</span>
+                <div class="inputbtn">
+                  <div class="inputs">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Training Subject</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Training Type</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Duration</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Trainer</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Mail ID</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Organized By</mat-label>
+                      <input matInput />
+                    </mat-form-field>
+                  </div>
+                  <div class="btn">
+                    <button mat-flat-button color="primary">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <!--  Training  End-->
+
+              <div class="experience">
+                <!--  Experience  Start -->
+                <span>Experience</span>
+                <div class="allinputsandbtn">
+                  <div class="allinputs">
+                    <div class="firstline">
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Organization</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Org. Type</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Designation</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Department</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Period</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Mail ID</mat-label>
+                        <input type="email" matInput />
+                      </mat-form-field>
+                    </div>
+                    <div class="secondline">
+                      <mat-form-field class="empname">
+                        <mat-label>Employer Name</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="emppostion">
+                        <mat-label>Postion</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                      <mat-form-field class="emplocation">
+                        <mat-label>Location</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                    </div>
+                    <div class="thirdline">
+                      <mat-form-field class="major">
+                        <mat-label>Major Resposibilities</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <button mat-flat-button color="primary">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <!--  Experience  END  -->
+
+              <div class="savebtn">
+                <button mat-flat-button color="primary">SAVE</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </mat-tab>
+      <!-- TAB 3 END -->
+      <mat-tab label="Health Care">
+        <section class="profile-health-care">
+          <div class="container">
+            <div class="main-section">
+              <div class="health-field">
+                <div class="example-field">
+                  <div class="content">
+                    <label class="field-name">Patient Name</label>
+                    <input text="text" class="field" />
+                  </div>
+
+                  <div class="content">
+                    <label class="field-name">Date</label>
+                    <input text="date" class="field" />
+                  </div>
+                </div>
+                <!---health Field End-->
+
+                <div class="example-fieldOne">
+                  <div class="">
+                    <label class="field-name">S/O|D/O|W/O</label>
+                    <input text="text" class="inputField" />
+                  </div>
+                </div>
+                <!--Health Field One End-->
+
+                <div class="example-field-two">
+                  <div class="content">
+                    <label for="birthday" class="field-name"
+                      >Date Of Birth:</label
+                    >
+                    <input
+                      type="date"
+                      id="birthday"
+                      name="birthday"
+                      class="field"
+                    />
+                  </div>
+                  <div class="content">
+                    <label class="field-name" for="age">Age</label>
+                    <input text="number" id="age" name="age" class="field" />
+                  </div>
+
+                  <div class="content">
+                    <label class="field-name" for="sex">Sex</label>
+                    <input text="text" id="sex" name="sex" class="field" />
+                  </div>
+
+                  <div class="content">
+                    <label class="field-name" for="occupation"
+                      >Occupation</label
+                    >
+                    <input
+                      text="text"
+                      id="occupation"
+                      name="occupation"
+                      class="field"
+                    />
+                  </div>
+                </div>
+                <!--Health Field Two End-->
+
+                <div class="example-field-three">
+                  <div class="content">
+                    <label class="field-name">Health Insurrance No</label>
+                    <input text="number" class="field" />
+                  </div>
+
+                  <div class="content">
+                    <label class="field-name">Health Care Provider</label>
+                    <input text="text" class="field" />
+                  </div>
+                </div>
+                <!--Health Field Three End-->
+
+                <div class="example-field-four">
+                  <div class="content">
+                    <label class="field-name">Health Card No</label>
+                    <input text="number" class="field" />
+                  </div>
+
+                  <div class="content">
+                    <label class="field-name">Patient Id No</label>
+                    <input text="number" class="field" />
+                  </div>
+                </div>
+                <!--Health Field Four End-->
+
+                <div class="example-field">
+                  <div class="content">
+                    <label class="field-name">Patient Address</label>
+                    <input text="text" class="field" />
+                  </div>
+                </div>
+                <!--Health patient address End-->
+
+                <div class="example-field example-field-six">
+                  <div class="content">
+                    <label class="field-name">Cell</label>
+                    <input text="text" class="field" />
+                  </div>
+                </div>
+                <!--Health contact End-->
+
+                <div class="example-textarea">
+                  <div class="content">
+                    <textarea
+                      class="comments"
+                      placeholder="Diagnosed With:"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--textarea End-->
+
+                <div class="example-field">
+                  <div class="content">
+                    <label class="field-name">Blood Pressure:</label>
+                    <input text="text" class="field" />
+                  </div>
+                  <div class="content">
+                    <label class="field-name">Pluse Rate:</label>
+                    <input text="text" class="field" />
+                  </div>
+                  <div class="content">
+                    <label class="field-name">Weight:</label>
+                    <input text="text" class="field" />
+                  </div>
+                </div>
+                <!--Health Field One End-->
+
+                <div class="example-field">
+                  <div class="content">
+                    <label class="field-name">Allergies:</label>
+                    <input text="text" class="field" />
+                  </div>
+                  <div class="content">
+                    <label class="field-name">Disabilities of any:</label>
+                    <input text="text" class="field" />
+                  </div>
+                </div>
+                <!--Health Field One End-->
+
+                <mat-card class="mat-card">
+                  <div class="same-content">
+                    <label class="fieldName">Drugs:</label>
+                    <div class="content">
+                      <span style="margin-right: 10px">1.</span>
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <span style="margin-right: 10px">2.</span>
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <span style="margin-right: 10px">3.</span>
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <span style="margin-right: 10px">4.</span>
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <span style="margin-right: 10px">5.</span>
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <span style="margin-right: 10px">6.</span>
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <span style="margin-right: 10px">7.</span>
+                      <input text="text" class="field" />
+                    </div>
+                  </div>
+                  <div class="same-content">
+                    <label class="fieldName">Unit (Tables/Syrup):</label>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                  </div>
+
+                  <div class="same-content">
+                    <label class="fieldName">Unit (Tables/Syrup):</label>
+
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                    <div class="content">
+                      <input text="text" class="field" />
+                    </div>
+                  </div>
+                </mat-card>
+
+                <div class="example-textarea">
+                  <div class="content">
+                    <textarea
+                      class="comments"
+                      placeholder="Diet To Follow:"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--textarea End-->
+
+                <div class="example-textarea">
+                  <div class="content">
+                    <textarea
+                      class="comments"
+                      placeholder="Brief History Of Patient:"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--textarea End-->
+
+                <div class="example-textarea">
+                  <div class="content">
+                    <textarea
+                      class="comments"
+                      placeholder="Follow Up Physician:"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--textarea End-->
+              </div>
+              <div class="add-button">
+                <button class="btn" mat-raised-button color="primary">
+                  Add
+                </button>
+              </div>
+            </div>
+            <!--Side button End-->
+
+            <div class="all-buttons">
+              <div class="example-button-row">
+                <button
+                  class="Previous-btn btn"
+                  mat-raised-button
+                  color="primary"
+                >
+                  Previous
+                </button>
+                <button class="next-btn btn" mat-raised-button color="accent">
+                  Next
+                </button>
+                <button class="save-btn btn" mat-raised-button color="warn">
+                  Save
+                </button>
+                <button class="new-btn btn" mat-raised-button color="warn">
+                  New
+                </button>
+                <button class="close-btn btn" mat-raised-button color="warn">
+                  Close
+                </button>
+              </div>
+            </div>
+            <!--all Button End-->
+          </div>
+        </section>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</section>

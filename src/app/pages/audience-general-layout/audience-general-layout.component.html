@@ -1,0 +1,439 @@
+<section class="eoi-expression">
+  <div class="container">
+    <div class="eoi-expression-form">
+      <div class="border-box">
+        <div class="border">
+            <h2 class="accepted-payment">Audience</h2>
+            <h2 class="accepted-payment head-two">Audience General Layout</h2>
+
+        </div>
+        <div class="border1">
+          <div class="input-grid">
+            <div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Address</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Present</mat-option>
+                    <mat-option value="two">Permanent</mat-option>
+                    <mat-option value="two">Working</mat-option>
+                    <mat-option value="two">Voting</mat-option>
+                    <mat-option value="two">Global</mat-option>
+                    <mat-option value="two"
+                      >(Continent Area all Disable)</mat-option
+                    >
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+            <div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Continent</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Asia</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Country</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Bangladesh</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>State/Division</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Asia</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>District/Counties/City Corporation</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Asia</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Sub-District/Ward/Municipalities</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Asia</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Union/Ward</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Asia</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Area/Village</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Asia</mat-option>
+                    <mat-option value="two">Eorope</mat-option>
+                    <mat-option value="two">Africa</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+            <div>
+              <div class="input-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Networks</mat-label>
+                  <mat-select>
+                    <mat-option value="one">Family</mat-option>
+                    <mat-option value="two">My Relative</mat-option>
+                    <mat-option value="two">All Relative</mat-option>
+                    <mat-option value="two">Family & My Relative</mat-option>
+                    <mat-option value="two">Family & All Relative</mat-option>
+                    <mat-option value="two">General</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="radio-button">
+            <input type="radio" id="or" name="fav_language" value="OR" />
+            <label for="or">OR</label><br />
+            <input type="radio" id="and" name="fav_language" value="AND" />
+            <label for="AND">AND</label><br />
+          </div>
+          <div class="input-field-flex">
+            <div class="input-field">
+              <mat-form-field appearance="outline">
+                <mat-label>Geo Location</mat-label>
+                <mat-select>
+                  <mat-option value="one">Present</mat-option>
+                  <mat-option value="two">Permanent</mat-option>
+                  <mat-option value="two">Working</mat-option>
+                  <mat-option value="two">Voting</mat-option>
+                  <mat-option value="two">Global</mat-option>
+                  <mat-option value="two"
+                    >(Continent Area all Disable)</mat-option
+                  >
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="input-field">
+              <mat-form-field appearance="outline">
+                <mat-label>Multiple</mat-label>
+                <input
+                  matInput
+                  placeholder="Multiple"
+                  [formControl]="serialNumber"
+                  required
+                />
+                <mat-error *ngIf="email.invalid">{{
+                  getErrorMessage()
+                }}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="input-grid">
+            <div class="input-field">
+              <mat-form-field appearance="outline">
+                <mat-label>Administrative Area</mat-label>
+                <input
+                  matInput
+                  placeholder="Administrative Area"
+                  [formControl]="serialNumber"
+                  required
+                />
+                <mat-error *ngIf="email.invalid">{{
+                  getErrorMessage()
+                }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="radio-button">
+              <input type="radio" id="or" name="fav_language" value="OR" />
+              <label for="or">OR</label><br />
+              <input type="radio" id="and" name="fav_language" value="AND" />
+              <label for="AND">AND</label><br />
+            </div>
+            <div class="input-field">
+              <mat-form-field appearance="outline">
+                <mat-label>Admin. Custom Radious</mat-label>
+                <input
+                  matInput
+                  placeholder="Admin. Custom Radious"
+                  [formControl]="serialNumber"
+                  required
+                />
+                <mat-error *ngIf="email.invalid">{{
+                  getErrorMessage()
+                }}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="border1">
+          <div class="radio-button">
+            <input type="radio" id="or" name="fav_language" value="OR" />
+            <label for="or">OR</label><br />
+            <input type="radio" id="and" name="fav_language" value="AND" />
+            <label for="AND">AND</label><br />
+          </div>
+          <div class="input-field-age">
+            <div class="input-field-with-text">
+              <div class="input-field-icons">
+                <h4>Age</h4>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="input-field">
+              <mat-form-field appearance="outline">
+                <mat-label>18</mat-label>
+                <mat-select>
+                  <mat-option value="one">18</mat-option>
+                  <mat-option value="one">19</mat-option>
+                  <mat-option value="two">20</mat-option>
+                  <mat-option value="two">21</mat-option>
+                  <mat-option value="two">22</mat-option>
+                  <mat-option value="two">23</mat-option>
+                  <mat-option value="two">24</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <h3>-</h3>
+              <mat-form-field appearance="outline">
+                <mat-label>65+</mat-label>
+                <mat-select>
+                  <mat-option value="one">65</mat-option>
+                  <mat-option value="two">66</mat-option>
+                  <mat-option value="two">67</mat-option>
+                  <mat-option value="two">68</mat-option>
+                  <mat-option value="two">69</mat-option>
+                  <mat-option value="two">70</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            </div>
+            <div class="input-field-with-text">
+              <div class="input-field-icons">
+                <h4>Gender</h4>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div>
+                <mat-button-toggle-group
+                  name="fontStyle"
+                  aria-label="Font Style"
+                >
+                  <mat-button-toggle value="bold">ALL</mat-button-toggle>
+                  <mat-button-toggle value="italic">Men</mat-button-toggle>
+                  <mat-button-toggle value="underline">Women</mat-button-toggle>
+                </mat-button-toggle-group>
+              </div>
+            </div>
+          </div>
+          <div class="input-field-with-text">
+            <div class="input-field-icons-hidden">
+              <h4>Demographics</h4>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <mat-form-field appearance="outline">
+              <mat-label>More Demographics</mat-label>
+              <mat-select>
+                <mat-option value="one">Present</mat-option>
+                <mat-option value="two">Permanent</mat-option>
+                <mat-option value="two">Working</mat-option>
+                <mat-option value="two">Voting</mat-option>
+                <mat-option value="two">Global</mat-option>
+                <mat-option value="two"
+                  >(Continent Area all Disable)</mat-option
+                >
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input-field-with-text">
+            <div class="input-field-icons">
+              <h4>Connections</h4>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <mat-form-field appearance="outline">
+              <mat-label>Add a connection type</mat-label>
+              <mat-select>
+                <mat-option value="one">18</mat-option>
+                <mat-option value="one">19</mat-option>
+                <mat-option value="two">20</mat-option>
+                <mat-option value="two">21</mat-option>
+                <mat-option value="two">22</mat-option>
+                <mat-option value="two">23</mat-option>
+                <mat-option value="two">24</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input-field-with-text">
+            <div class="input-field-icons">
+              <h4>Languages</h4>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <mat-form-field appearance="outline">
+              <mat-label>Enter language</mat-label>
+              <input
+                matInput
+                placeholder="Enter language"
+                [formControl]="serialNumber"
+                required
+              />
+              <mat-error *ngIf="email.invalid">{{
+                getErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="input-field-with-text">
+            <div class="input-field-icons">
+              <h4>Interests</h4>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <mat-form-field appearance="outline">
+              <mat-label>Social media examiner</mat-label>
+              <input
+                matInput
+                placeholder="Social media examiner"
+                [formControl]="serialNumber"
+                required
+              />
+              <mat-error *ngIf="email.invalid">{{
+                getErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="input-field-with-text">
+            <div class="input-field-icons">
+              <h4>Behaviors</h4>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <mat-form-field appearance="outline">
+              <mat-label>Behaviors</mat-label>
+              <input
+                matInput
+                placeholder="Behaviors"
+                [formControl]="serialNumber"
+                required
+              />
+              <mat-error *ngIf="email.invalid">{{
+                getErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="input-field-with-text">
+            <div class="input-field-icons">
+              <h4>More Categories</h4>
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <mat-form-field appearance="outline">
+              <mat-label>More Categories</mat-label>
+              <input
+                matInput
+                placeholder="More Categories"
+                [formControl]="serialNumber"
+                required
+              />
+              <mat-error *ngIf="email.invalid">{{
+                getErrorMessage()
+              }}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="input-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Nationality</mat-label>
+              <mat-select>
+                <mat-option value="one">Asia</mat-option>
+                <mat-option value="two">Eorope</mat-option>
+                <mat-option value="two">Africa</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Religion</mat-label>
+              <mat-select>
+                <mat-option value="one">Bangladesh</mat-option>
+                <mat-option value="two">Eorope</mat-option>
+                <mat-option value="two">Africa</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Occupation</mat-label>
+              <mat-select>
+                <mat-option value="one">Asia</mat-option>
+                <mat-option value="two">Eorope</mat-option>
+                <mat-option value="two">Africa</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input-field">
+            <mat-form-field appearance="outline">
+              <mat-label>Job Status</mat-label>
+              <mat-select>
+                <mat-option value="one">Asia</mat-option>
+                <mat-option value="two">Eorope</mat-option>
+                <mat-option value="two">Africa</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+    <mat-form-field appearance="outline">
+    
+    
+    
+    
+    
+    <input matInput placeholder="address" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Post Office" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Zip Code" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Area/Village" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Street" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Home Name" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="House Name" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Top Great Grand Mother" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Latest Generation a Family Member" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="His/Her Father Name" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="About Your Family" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="Alternative Family Admin Name" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="His/Her Mail ID" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="His/Her Mobile" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field> -->

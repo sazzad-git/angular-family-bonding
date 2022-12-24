@@ -1,0 +1,379 @@
+// @import "../../../theme/exports/personal-profile-marital";
+// @import "../../../theme//exports/profile-health-care";
+// @import "../../../theme/exports/profile-professional";
+.container-fluid {
+  width: 100%;
+  max-width: 1400px;
+  
+  .banner {
+    // background-image: url('../../../assets/images/png/background.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size:cover ;
+    // height: 400px;
+
+    .profile {
+      img {
+        border-radius: 50%;
+        width: 230px;
+        height: 230px;
+        margin: auto;
+        display: block;
+        margin-top: 100px;
+      }
+    }
+  }
+
+}
+
+.container-fluid {
+  .tab-area {
+    width: 90%;
+    margin: auto;
+    .content {
+      .log-in-form {
+      //  padding: 20px;
+        .border-box {
+          background-color: #fff;
+        //  padding: 25px;
+         // margin-left: 30px;
+
+          .dashboard {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px 0;
+          }
+
+          .two-button {
+            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            gap: 20px;
+
+            button {
+              border: 1px solid #ccc;
+              padding: 8px 15px;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .input-field {
+        max-width: 600px;
+
+        ::ng-deep .mat-form-field {
+          display: inline-block;
+          position: relative;
+          text-align: left;
+          width: 100%;
+        }
+
+
+      }
+
+      h4 {
+        color: red;
+      }
+
+      .list {
+        ul {
+          list-style: square;
+          margin-left: 20px;
+        }
+      }
+
+      .small {
+        max-width: 200px;
+        display: grid !important;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+
+        .input-field {
+          max-width: 250px;
+
+          ::ng-deep .mat-form-field {
+            display: inline-block;
+            position: relative;
+            text-align: left;
+            width: 100%;
+          }
+        }
+
+        button {
+          border: 1px solid #ccc;
+          padding: 8px 15px;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+
+      }
+
+
+      ::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+        padding: 0.25em 0 0.75em 0;
+        display: flex;
+      }
+
+      .h-two {
+        margin-left: 15px !important;
+      }
+
+      // .......end
+    }
+
+    .checkbox-area {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .checkbox2 {
+      font-size: 18px;
+    }
+  }
+
+  ::ng-deep .mat-tab-body-content{
+     overflow: hidden !important;
+     
+  }
+
+
+}
+
+::ng-deep.mat-tab-label .mat-tab-label-content {
+  font-size: 24px;
+}
+
+::ng-deep .custom-frame {
+  margin-right: 30px;
+  font-size: 18px;
+
+  & .mat-checkbox-background,
+  .mat-checkbox-frame {
+    border-radius: 70% !important;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .log-in-form {
+    border-radius: 15px;
+   // padding: 20px;
+    height: auto;
+
+    .border-box {
+      border-radius: 15px;
+      height: auto;
+      background-color: #fff;
+      padding: 10px 0;
+
+      h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+      }
+
+      p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1;
+        padding: 20px 0 20px 0;
+      }
+
+    }
+  }
+
+  .input-field {
+    max-width: 600px;
+
+    ::ng-deep .mat-form-field {
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  .small {
+    max-width: 100px;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+
+    .input-field {
+      max-width: 120px;
+
+      ::ng-deep .mat-form-field {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0.25em 0 0.75em 0;
+    display: flex;
+  }
+
+  .h-two {
+    margin-left: 15px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .log-in-form {
+    border-radius: 15px;
+  //  padding: 20px;
+    height: auto;
+
+    .border-box {
+      border-radius: 15px;
+      height: auto;
+      background-color: #fff;
+      padding: 10px 0;
+
+      h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+      }
+
+      p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1;
+        padding: 20px 0 20px 0;
+      }
+
+      .dashboard {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+      }
+
+      .two-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        margin: auto;
+        gap: 15px;
+
+        .button-one {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          button {
+            margin: auto !important;
+            background-color: #00b050;
+            max-width: 300px;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #fff;
+            border: 1px solid black;
+            cursor: pointer;
+
+          }
+        }
+
+        .button-two {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          button {
+            background-color: #00b050;
+            max-width: 300px;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #fff;
+            border: 1px solid black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .input-field {
+    max-width: 600px;
+
+    ::ng-deep .mat-form-field {
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  .small {
+    max-width: 100px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+
+    .input-field {
+      max-width: 120px;
+
+      ::ng-deep .mat-form-field {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0.25em 0 0.75em 0;
+    display: flex;
+  }
+
+  .h-two {
+    margin-left: 15px !important;
+  }
+}
+
+@media(max-width:550px) {
+  .checkbox2 {
+
+    font-size: 11px !important;
+  }
+}
+
+@media(max-width: 500px) {
+  .small {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

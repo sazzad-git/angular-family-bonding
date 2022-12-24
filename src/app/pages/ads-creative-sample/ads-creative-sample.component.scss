@@ -1,0 +1,93 @@
+@import "../fm-blood-donor-one/fm-blood-donor-one.component.scss";
+
+.top-heading {
+  color: #921e1a;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px !important;
+  font-weight: 900;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.688);
+}
+.mySwiper {
+  max-width: 1440px;
+  height: 400px;
+  text-align: center;
+  padding-bottom: 0;
+  // margin-bottom: 70px;
+}
+::ng-deep.swiper-button-prev {
+  left: 10px;
+  right: auto;
+  color: #ff00bf;
+  border: 3px solid rgba(0, 0, 0, 0.605);
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #055b9d95;
+}
+::ng-deep.swiper-button-next {
+  left: 10px;
+  left: auto;
+  color: #ff00bf;
+  border: 3px solid rgba(0, 0, 0, 0.605);
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #055b9d95;
+}
+.card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.border {
+  border: 3px solid rgb(0, 0, 0);
+  display: grid;
+  margin: 0 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  
+}
+.middle-img {
+  text-align: center;
+  padding-top: 30px;
+  
+}
+.bottom-img {
+  text-align: center;
+  padding: 30px 0;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  .mySwiper {
+    padding: 0 20px;
+  }
+  .border {
+    border: 1px solid rgb(0, 0, 0);
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .middle-img {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+  }
+  .bottom-img {
+    text-align: center;
+    padding: 20px 20px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1020px) {
+  .mySwiper {
+    padding: 0 30px;
+  }
+  .middle-img {
+    text-align: center;
+    padding: 30px 30px 0 30px;
+  }
+  .bottom-img {
+    text-align: center;
+    padding: 30px 30px;
+  }
+}

@@ -1,0 +1,111 @@
+// @import "../family-admin/family-admin.component.scss";
+
+.bg-container {
+  background-image: url("../../../assets/images/global.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+}
+.comment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+.example-full-width {
+  color: wheat;
+  background-color: rgba(255, 255, 255, 0.542);
+  border-radius: 15px;
+  margin-left: 10px;
+}
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e3f6a;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+}
+.icon {
+  background-color: white;
+  border-radius: 15px;
+}
+.icon-text {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.next-btn {
+  background-color: #00b050;
+  color: white;
+  padding: 5px 25px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 4px solid #385d8a;
+}
+.visit-container {
+  background-color: white;
+  padding: 5px 10px;
+  position: absolute;
+  // margin-top: 20px;
+  top: 65%;
+  left: 45%;
+  .visit-btn {
+    background-color: #c30b09;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 5px 10px;
+    border: none;
+  }
+}
+.bottom-btn {
+  display: flex;
+  padding-top: 550px;
+  justify-content: space-around !important;
+  .like-btn {
+    background-color: white;
+    padding: 5px 5px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    border: 3px solid #385d8a;
+    border-radius: 5px;
+    color: #385d8a;
+    .like-icon {
+      font-size: 16px;
+    }
+  }
+  img {
+    height: 50px;
+    // max-width: 40px;
+  }
+}
+
+@media only screen and (max-width: 668px) and (min-width: 320px) {
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+    left: 30%;
+    top: 200px;
+  }
+  .next-btn {
+    margin-top: 10px;
+  }
+  .example-full-width {
+    margin-top: 10px;
+  }
+  .visit-container {
+    top: 450px;
+    left: 42%;
+  }
+}
